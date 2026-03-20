@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+.container{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+#upload{
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border: 2px solid;
+
+    justify-content: center;
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+
+}
+
+#number1, #number2{
+    height:30px;
+    width:75px;
+    outline:none;
+    
+}
+
+#number1:focus, #number2:focus{
+    border:2px solid;
+    border-color:blue;
+    box-shadow:4px 4px 8px 8px;
+    
+    font-size: 15px;
+    border-radius:2px;
+}
+
+#show{
+    cursor:pointer;
+    height:35px;
+    width:100px;
+    border: none;
+    background: blue;
+    color: white;
+
+}
+
+#format{
+    height:30px;
+    width:100px;
+    
+}
+
+#download{
+    cursor:pointer;
+    height:35px;
+    width:150px;
+    border: none;
+    background: blue;
+    color: white;
+}

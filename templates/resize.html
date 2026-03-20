@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Image</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='resize.css')}}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Upload Image</h1>
+        <label for="file" id="upload">
+            <span id="img_name">Click to Image Select</span>
+        </label>
+        <input type="file" id="file" hidden> <br><br>
+        
+        
+        
+
+        Enter Height : <input type="number" id="number1" > <br> <br>
+        Enter Width : <input type="number" id="number2" >  <br> <br>
+
+        <select id="format">
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="webp">WEBP</option>
+        </select>  <br><br>
+
+        <button id="show">Resize Image</button> <br><br>
+
+        <p id="para"></p> <br><br>
+        
+
+        <div>
+        <button id="download">Download Image</button>
+        </div>
+    </div>
+
+    
+    
+    <script src="{{url_for('static', filename='resize.js')}}"></script>
+</body>
+</html>

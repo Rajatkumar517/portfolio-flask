@@ -1,0 +1,149 @@
+body{
+    background:#0f6a6a;
+    display:flex;
+    justify-content: center;
+    
+    margin:0;
+}
+.container{
+    border: 2px solid;
+    width: 90%;
+    max-width:700px;
+    margin-top:40px;
+    padding:20px;
+
+    background: darkcyan;
+    border-radius:10px;
+    color: white;
+    
+}
+
+#addinput{
+    outline: none;
+    height:30px;
+    border:none;
+    border-radius:15px;
+    box-shadow: 2px 1px 4px 3px  white;
+}
+#addinput:hover{
+    box-shadow:0px 0px 8px;
+    transition: all 0.3s ease;
+}
+#addinput:focus{
+    border:1px solid;
+    border-color: blue;
+}
+
+.inputbox{
+    display:flex;
+    gap:12px;
+    
+}
+
+#addtask{
+    height:35px;
+    width:70px;
+    background: skyblue;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+#addtask:hover{
+    background:chartreuse;
+    color:white;
+    border-radius:5px;
+    transform: scale(1.08);
+}
+
+.done{
+    text-decoration: line-through;
+    color:grey;
+
+}
+
+.completed{
+    background: red;
+    color:white;
+
+}
+
+#tasklist{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#tasklist li{
+    display:flex;
+    justify-content: space-between;
+
+    padding:8px;
+    align-items: center;
+    margin-top: 10px;
+    background: darkseagreen;
+    border-radius:10px 0px 10px 0px;
+
+    border-left:5px solid blue;
+    border-right:5px solid blue;
+    transition:all 0.3s ease;
+
+}
+#tasklist li:hover{
+    background-color:darkkhaki;
+    transform:translateX(10px)
+}
+
+#tasklist button{
+    margin-left:5px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 8px;
+}
+#tasklist button:hover{
+    background-color: yellow;
+}
+
+
+.btnBox{
+    display: flex;
+    gap: 6px;
+}
+
+#tasklist span{
+    margin-right:10px;
+}
+
+.scoreBox{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    background: #0f6a6a;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom: 15px;
+
+}
+
+.scoreText{
+    display: flex;   
+    flex-direction: column;
+    gap: 4px;
+}
+
+.taskration{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    background:conic-gradient(#00b894, 0deg, #dfe6e9, 0deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    transition: 0.4s;
+}
